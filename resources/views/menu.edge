@@ -1,0 +1,29 @@
+<div class="ui secondary pointing menu">
+    <div class="item">
+        <i class="chart bar icon"></i>
+    </div>
+    @if(url === '/')
+        <a class="item active" href="/">Home</a>
+    @else
+        <a class="item" href="/">Home</a>
+    @endif
+
+    @loggedIn
+    @if(url === '/dashboard')
+        <a class="item active" href="/dashboard">Control Panel</a>
+    @else
+        <a class="item" href="/dashboard">Control Panel</a>
+    @endif
+    @endloggedIn
+
+    <div class="right menu">
+        @loggedIn
+        <p class="ui item">
+            <i class="user icon"></i> {{ auth.user.username  }}
+        </p>
+        <a class="ui item" href="/logout">Logout</a>
+        @else
+        <a class="ui item" href="/signin">Login</a>
+        @endloggedIn
+    </div>
+</div>

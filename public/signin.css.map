@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./frontend/js/components/SigninForm/frontend/js/components/SigninForm/signin.scss"],"names":[],"mappings":"AAAA,WACE,eAAgB","file":"signin.css","sourcesContent":["#js-signin {\n  margin-top: 70px;\n}"],"sourceRoot":""}

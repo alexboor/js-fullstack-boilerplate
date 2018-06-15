@@ -1,0 +1,30 @@
+@layout('layout/web')
+
+@section('meta')
+
+@endsection
+
+@section('styles')
+    @super
+    {{ style('signin') }}
+@endsection
+
+@section('content')
+
+    @include('menu')
+
+    <div class="ui three column centered grid">
+        <div class="column">
+            <div class="ui segment center aligned" id="js-signin" data-token="{{ csrfToken }}">
+
+
+            </div>
+        </div>
+
+    </div>
+
+@endsection
+
+@section('script')
+{{ script('js/signin') }}
+@endsection

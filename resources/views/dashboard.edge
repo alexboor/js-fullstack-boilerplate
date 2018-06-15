@@ -1,0 +1,24 @@
+@layout('layout/web')
+
+@section('meta')
+
+@endsection
+
+@section('styles')
+    @super
+    {{ style('signin') }}
+@endsection
+
+@section('content')
+
+    @include('menu')
+
+    <div class="ui three column centered grid">
+        <h1>Dashboard</h1>
+    </div>
+
+@endsection
+
+@section('script')
+    {{ script('js/signin') }}
+@endsection
